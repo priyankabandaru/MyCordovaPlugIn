@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com-plugincreate-plugins-swift" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>MyplugIn</name>
+    <js-module name="MyplugIn" src="www/MyplugIn.js">
+        <clobbers target="myplugin" />
+    </js-module>
+<platform name="ios">
+ <config-file target="config.xml" parent="/*">
+  <feature name="MyplugIn">
+   <param name="ios-package" value="MyplugIn"/>
+  </feature>
+ </config-file>
+ <source-file src="src/ios/MyplugIn.swift" />
+</platform>
+</plugin>
